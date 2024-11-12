@@ -128,6 +128,61 @@ class _PropertyNamePageState extends State<PropertyNamePage> {
       color: Colors.purple.withOpacity(0.3),
       title: '11517',
     ),
+    ImageMapRegion(
+      shape: ImageMapShape.poly,
+      path: Path()
+        ..moveTo(386, 449)
+        ..lineTo(390, 394)
+        ..lineTo(494, 401)
+        ..lineTo(488, 456)
+        ..close(),
+      color: Colors.orange.withOpacity(0.3),
+      title: '11516',
+    ),
+    ImageMapRegion(
+      shape: ImageMapShape.poly,
+      path: Path()
+        ..moveTo(390, 393)
+        ..lineTo(394, 338)
+        ..lineTo(500, 345)
+        ..lineTo(494, 400)
+        ..close(),
+      color: Colors.pink.withOpacity(0.3),
+      title: '11515',
+    ),
+    ImageMapRegion(
+      shape: ImageMapShape.poly,
+      path: Path()
+        ..moveTo(394, 337)
+        ..lineTo(398, 282)
+        ..lineTo(506, 289)
+        ..lineTo(500, 344)
+        ..close(),
+      color: Colors.teal.withOpacity(0.3),
+      title: '11514',
+    ),
+    ImageMapRegion(
+      shape: ImageMapShape.poly,
+      path: Path()
+        ..moveTo(398, 281)
+        ..lineTo(402, 226)
+        ..lineTo(512, 233)
+        ..lineTo(506, 288)
+        ..close(),
+      color: Colors.indigo.withOpacity(0.3),
+      title: '11513',
+    ),
+    ImageMapRegion(
+      shape: ImageMapShape.poly,
+      path: Path()
+        ..moveTo(402, 225)
+        ..lineTo(406, 170)
+        ..lineTo(518, 177)
+        ..lineTo(512, 232)
+        ..close(),
+      color: Colors.lime.withOpacity(0.3),
+      title: '11512',
+    ),
   ];
 
   void _savePropertyOwner() {
@@ -163,9 +218,9 @@ class _PropertyNamePageState extends State<PropertyNamePage> {
                       onTapDown: (details) => _onImageTap(details, constraints),
                       child: Stack(
                         children: [
-                          Image.asset('lib/umlegungsplan.png', fit: BoxFit.contain),
+                          Image.asset('lib/new_image_name.png', fit: BoxFit.contain),
                           ImageMap(
-                            image: Image.asset('lib/umlegungsplan.png', fit: BoxFit.contain),
+                            image: Image.asset('lib/new_image_name.png', fit: BoxFit.contain),
                             regions: _regions,
                             onTap: (region) {
                               if (region.title != null) {
