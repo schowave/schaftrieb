@@ -155,8 +155,8 @@ class _PropertyNamePageState extends State<PropertyNamePage> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               SizedBox(
-                width: 800,
-                height: 800,
+                width: 1200,
+                height: 1000,
                 child: LayoutBuilder(
                   builder: (context, constraints) {
                     return GestureDetector(
