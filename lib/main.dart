@@ -45,6 +45,7 @@ class _PropertyNamePageState extends State<PropertyNamePage> {
     setState(() {
       _selectedProperty = property;
     });
+    print('Selected property: $property'); // Add this line for debugging
   }
 
   void _savePropertyOwner() {
@@ -76,7 +77,11 @@ class _PropertyNamePageState extends State<PropertyNamePage> {
                 height: 800,
                 child: ImageMap(
                   image: Image.asset('lib/umlegungsplan.png', fit: BoxFit.contain),
-                  onTap: (region) => _selectProperty(region.title ?? ''),
+                  onTap: (region) {
+                    if (region != null) {
+                      _selectProperty(region.title ?? '');
+                    }
+                  },
                   regions: [
                     ImageMapRegion(
                       shape: ImageMapShape.rect,
@@ -106,7 +111,7 @@ class _PropertyNamePageState extends State<PropertyNamePage> {
               ),
               const SizedBox(height: 20),
               Text(
-                'Selected Property: $_selectedProperty',
+                'Selected Property: ${_selectedProperty.isNotEmpty ? _selectedProperty : "None"}',
                 style: Theme.of(context).textTheme.titleMedium,
               ),
               const SizedBox(height: 20),
