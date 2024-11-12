@@ -75,7 +75,7 @@ class _PropertyNamePageState extends State<PropertyNamePage> {
                 width: 400,
                 height: 400,
                 child: ImageMap(
-                  image: const AssetImage('lib/umlegungsplan.png'),
+                  image: Image.asset('lib/umlegungsplan.png'),
                   onTap: (region) => _selectProperty(region.title ?? ''),
                   regions: [
                     ImageMapRegion(
