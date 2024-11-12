@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_image_map/flutter_image_map.dart';
-import 'package:flutter_image_map/src/region.dart';
+import 'package:flutter_image_map/flutter_image_map.dart';
 
 void main() {
   runApp(const MyApp());
@@ -79,15 +79,15 @@ class _PropertyNamePageState extends State<PropertyNamePage> {
                   image: const AssetImage('lib/umlegungsplan.png'),
                   onTap: (region) => _selectProperty(region.name),
                   regions: [
-                    Region(
+                    ImageMapRegion(
                       name: 'Property 1',
-                      shape: Shape.rectangle,
-                      points: [Point(0, 0), Point(100, 100)],
+                      shape: RegionShape.rectangle,
+                      points: [Offset(0, 0), Offset(100, 100)],
                     ),
-                    Region(
+                    ImageMapRegion(
                       name: 'Property 2',
-                      shape: Shape.rectangle,
-                      points: [Point(100, 0), Point(200, 100)],
+                      shape: RegionShape.rectangle,
+                      points: [Offset(100, 0), Offset(200, 100)],
                     ),
                     // Add more regions as needed
                   ],
