@@ -71,48 +71,63 @@ class _PropertyNamePageState extends State<PropertyNamePage> {
 
   final List<ImageMapRegion> _regions = [
     ImageMapRegion(
-      shape: ImageMapShape.rect,
+      shape: ImageMapShape.poly,
       path: Path()
         ..moveTo(0, 0)
-        ..lineTo(400, 0)
+        ..lineTo(800, 0)
+        ..lineTo(800, 200)
+        ..lineTo(600, 200)
+        ..lineTo(600, 400)
         ..lineTo(400, 400)
-        ..lineTo(0, 400)
+        ..lineTo(400, 200)
+        ..lineTo(0, 200)
         ..close(),
-      color: Colors.blue.withOpacity(0.3),
+      color: Colors.red.withOpacity(0.3),
       title: 'Property 1',
     ),
     ImageMapRegion(
-      shape: ImageMapShape.rect,
+      shape: ImageMapShape.poly,
       path: Path()
-        ..moveTo(400, 0)
-        ..lineTo(800, 0)
-        ..lineTo(800, 400)
-        ..lineTo(400, 400)
+        ..moveTo(0, 200)
+        ..lineTo(400, 200)
+        ..lineTo(400, 600)
+        ..lineTo(0, 600)
         ..close(),
       color: Colors.green.withOpacity(0.3),
       title: 'Property 2',
     ),
     ImageMapRegion(
-      shape: ImageMapShape.rect,
+      shape: ImageMapShape.poly,
       path: Path()
-        ..moveTo(0, 400)
-        ..lineTo(400, 400)
-        ..lineTo(400, 800)
-        ..lineTo(0, 800)
+        ..moveTo(400, 400)
+        ..lineTo(600, 400)
+        ..lineTo(600, 600)
+        ..lineTo(400, 600)
         ..close(),
-      color: Colors.red.withOpacity(0.3),
+      color: Colors.blue.withOpacity(0.3),
       title: 'Property 3',
     ),
     ImageMapRegion(
-      shape: ImageMapShape.rect,
+      shape: ImageMapShape.poly,
       path: Path()
-        ..moveTo(400, 400)
-        ..lineTo(800, 400)
-        ..lineTo(800, 800)
-        ..lineTo(400, 800)
+        ..moveTo(600, 200)
+        ..lineTo(800, 200)
+        ..lineTo(800, 600)
+        ..lineTo(600, 600)
         ..close(),
       color: Colors.yellow.withOpacity(0.3),
       title: 'Property 4',
+    ),
+    ImageMapRegion(
+      shape: ImageMapShape.poly,
+      path: Path()
+        ..moveTo(0, 600)
+        ..lineTo(800, 600)
+        ..lineTo(800, 800)
+        ..lineTo(0, 800)
+        ..close(),
+      color: Colors.purple.withOpacity(0.3),
+      title: 'Property 5',
     ),
   ];
 
