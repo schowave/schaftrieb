@@ -72,10 +72,10 @@ class _PropertyNamePageState extends State<PropertyNamePage> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               SizedBox(
-                width: 400,
-                height: 400,
+                width: 600,
+                height: 600,
                 child: ImageMap(
-                  image: Image.asset('lib/umlegungsplan.png'),
+                  image: Image.asset('lib/umlegungsplan.png', fit: BoxFit.contain),
                   onTap: (region) => _selectProperty(region.title ?? ''),
                   regions: [
                     ImageMapRegion(
