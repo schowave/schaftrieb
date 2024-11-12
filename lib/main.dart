@@ -72,7 +72,7 @@ class _PropertyNamePageState extends State<PropertyNamePage> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               ImageMap(
-                imagePath: 'lib/umlegungsplan.png',
+                image: const AssetImage('lib/umlegungsplan.png'),
                 imageSize: const Size(400, 400),
                 onTap: (area) => _selectProperty(area.name),
                 areas: [
