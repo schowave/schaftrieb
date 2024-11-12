@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_image_map/flutter_image_map.dart';
-import 'package:flutter_image_map/flutter_image_map.dart';
 
 void main() {
   runApp(const MyApp());
@@ -77,17 +76,29 @@ class _PropertyNamePageState extends State<PropertyNamePage> {
                 height: 400,
                 child: ImageMap(
                   image: const AssetImage('lib/umlegungsplan.png'),
-                  onTap: (region) => _selectProperty(region.name),
+                  onTap: (region) => _selectProperty(region.title ?? ''),
                   regions: [
                     ImageMapRegion(
-                      name: 'Property 1',
                       shape: RegionShape.rectangle,
-                      points: [Offset(0, 0), Offset(100, 100)],
+                      path: Path()
+                        ..moveTo(0, 0)
+                        ..lineTo(100, 0)
+                        ..lineTo(100, 100)
+                        ..lineTo(0, 100)
+                        ..close(),
+                      color: Colors.blue.withOpacity(0.3),
+                      title: 'Property 1',
                     ),
                     ImageMapRegion(
-                      name: 'Property 2',
                       shape: RegionShape.rectangle,
-                      points: [Offset(100, 0), Offset(200, 100)],
+                      path: Path()
+                        ..moveTo(100, 0)
+                        ..lineTo(200, 0)
+                        ..lineTo(200, 100)
+                        ..lineTo(100, 100)
+                        ..close(),
+                      color: Colors.green.withOpacity(0.3),
+                      title: 'Property 2',
                     ),
                     // Add more regions as needed
                   ],
