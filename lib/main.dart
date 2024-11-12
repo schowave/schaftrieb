@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_image_map/flutter_image_map.dart';
-import 'image_map_data.dart';
+import 'image_map_data.dart' show regions;
 
 void main() {
   runApp(const MyApp());
@@ -60,7 +60,7 @@ class _PropertyNamePageState extends State<PropertyNamePage> {
     print('Relative position: ($relativeX, $relativeY)');
 
     // Check which region was tapped
-    for (var region in _regions) {
+    for (var region in regions) {
       if (region.path.contains(Offset(relativeX * 800, relativeY * 800))) {
         print('Region detected: ${region.title}');
         _selectProperty(region.title ?? '');
@@ -107,7 +107,7 @@ class _PropertyNamePageState extends State<PropertyNamePage> {
                           Image.asset('lib/umlegungsplan.png', fit: BoxFit.contain),
                           ImageMap(
                             image: Image.asset('lib/umlegungsplan.png', fit: BoxFit.contain),
-                            regions: _regions,
+                            regions: regions,
                             onTap: (region) {
                               if (region.title != null) {
                                 _selectProperty(region.title!);

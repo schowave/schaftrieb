@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_image_map/flutter_image_map.dart';
 
-final List<ImageMapRegion> _regions = [
+final List<ImageMapRegion> regions = [
   ImageMapRegion(
     shape: ImageMapShape.poly,
     path: Path()
