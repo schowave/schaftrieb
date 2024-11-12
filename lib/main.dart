@@ -79,7 +79,7 @@ class _PropertyNamePageState extends State<PropertyNamePage> {
                   onTap: (region) => _selectProperty(region.title ?? ''),
                   regions: [
                     ImageMapRegion(
-                      shape: RegionShape.rectangle,
+                      shape: ImageMapShape.rect,
                       path: Path()
                         ..moveTo(0, 0)
                         ..lineTo(100, 0)
@@ -90,7 +90,7 @@ class _PropertyNamePageState extends State<PropertyNamePage> {
                       title: 'Property 1',
                     ),
                     ImageMapRegion(
-                      shape: RegionShape.rectangle,
+                      shape: ImageMapShape.rect,
                       path: Path()
                         ..moveTo(100, 0)
                         ..lineTo(200, 0)
