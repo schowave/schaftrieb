@@ -73,61 +73,60 @@ class _PropertyNamePageState extends State<PropertyNamePage> {
     ImageMapRegion(
       shape: ImageMapShape.poly,
       path: Path()
-        ..moveTo(0, 0)
-        ..lineTo(800, 0)
-        ..lineTo(800, 200)
-        ..lineTo(600, 200)
-        ..lineTo(600, 400)
-        ..lineTo(400, 400)
-        ..lineTo(400, 200)
-        ..lineTo(0, 200)
+        ..moveTo(316, 642)
+        ..lineTo(355, 681)
+        ..lineTo(453, 686)
+        ..lineTo(467, 632)
+        ..lineTo(374, 622)
+        ..lineTo(352, 603)
         ..close(),
       color: Colors.red.withOpacity(0.3),
-      title: 'Property 1',
+      title: '11521',
     ),
     ImageMapRegion(
       shape: ImageMapShape.poly,
       path: Path()
-        ..moveTo(0, 200)
-        ..lineTo(400, 200)
-        ..lineTo(400, 600)
-        ..lineTo(0, 600)
+        ..moveTo(375, 577)
+        ..lineTo(475, 582)
+        ..lineTo(466, 629)
+        ..lineTo(376, 621)
+        ..lineTo(353, 600)
         ..close(),
       color: Colors.green.withOpacity(0.3),
-      title: 'Property 2',
+      title: '11520',
     ),
     ImageMapRegion(
       shape: ImageMapShape.poly,
       path: Path()
-        ..moveTo(400, 400)
-        ..lineTo(600, 400)
-        ..lineTo(600, 600)
-        ..lineTo(400, 600)
+        ..moveTo(382, 545)
+        ..lineTo(374, 576)
+        ..lineTo(474, 579)
+        ..lineTo(478, 551)
         ..close(),
       color: Colors.blue.withOpacity(0.3),
-      title: 'Property 3',
+      title: '11519',
     ),
     ImageMapRegion(
       shape: ImageMapShape.poly,
       path: Path()
-        ..moveTo(600, 200)
-        ..lineTo(800, 200)
-        ..lineTo(800, 600)
-        ..lineTo(600, 600)
+        ..moveTo(383, 515)
+        ..lineTo(481, 521)
+        ..lineTo(477, 550)
+        ..lineTo(380, 545)
         ..close(),
       color: Colors.yellow.withOpacity(0.3),
-      title: 'Property 4',
+      title: '11518',
     ),
     ImageMapRegion(
       shape: ImageMapShape.poly,
       path: Path()
-        ..moveTo(0, 600)
-        ..lineTo(800, 600)
-        ..lineTo(800, 800)
-        ..lineTo(0, 800)
+        ..moveTo(383, 505)
+        ..lineTo(386, 450)
+        ..lineTo(488, 457)
+        ..lineTo(481, 512)
         ..close(),
       color: Colors.purple.withOpacity(0.3),
-      title: 'Property 5',
+      title: '11517',
     ),
   ];
 
