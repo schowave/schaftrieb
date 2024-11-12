@@ -73,117 +73,107 @@ class _PropertyNamePageState extends State<PropertyNamePage> {
     ImageMapRegion(
       shape: ImageMapShape.poly,
       path: Path()
-        ..moveTo(316, 642)
-        ..lineTo(355, 681)
-        ..lineTo(453, 686)
-        ..lineTo(467, 632)
-        ..lineTo(374, 622)
-        ..lineTo(352, 603)
-        ..close(),
+        ..moveTo(317, 640)..lineTo(356, 679)..lineTo(459, 683)..lineTo(425, 804)
+        ..lineTo(407, 813)..lineTo(387, 808)..lineTo(310, 767)..lineTo(288, 708)
+        ..lineTo(269, 690)..close(),
       color: Colors.red.withOpacity(0.3),
+      title: '11522',
+    ),
+    ImageMapRegion(
+      shape: ImageMapShape.poly,
+      path: Path()
+        ..moveTo(319, 639)..lineTo(358, 676)..lineTo(462, 683)..lineTo(470, 626)
+        ..lineTo(380, 620)..lineTo(355, 600)..close(),
+      color: Colors.green.withOpacity(0.3),
       title: '11521',
     ),
     ImageMapRegion(
       shape: ImageMapShape.poly,
       path: Path()
-        ..moveTo(375, 577)
-        ..lineTo(475, 582)
-        ..lineTo(466, 629)
-        ..lineTo(376, 621)
-        ..lineTo(353, 600)
-        ..close(),
-      color: Colors.green.withOpacity(0.3),
+        ..moveTo(378, 573)..lineTo(477, 580)..lineTo(469, 625)..lineTo(378, 621)
+        ..lineTo(356, 599)..close(),
+      color: Colors.blue.withOpacity(0.3),
       title: '11520',
     ),
     ImageMapRegion(
       shape: ImageMapShape.poly,
       path: Path()
-        ..moveTo(382, 545)
-        ..lineTo(374, 576)
-        ..lineTo(474, 579)
-        ..lineTo(478, 551)
+        ..moveTo(383, 542)..lineTo(480, 548)..lineTo(477, 578)..lineTo(377, 572)
         ..close(),
-      color: Colors.blue.withOpacity(0.3),
+      color: Colors.yellow.withOpacity(0.3),
       title: '11519',
     ),
     ImageMapRegion(
       shape: ImageMapShape.poly,
       path: Path()
-        ..moveTo(383, 515)
-        ..lineTo(481, 521)
-        ..lineTo(477, 550)
-        ..lineTo(380, 545)
+        ..moveTo(384, 510)..lineTo(484, 517)..lineTo(481, 548)..lineTo(384, 542)
         ..close(),
-      color: Colors.yellow.withOpacity(0.3),
+      color: Colors.purple.withOpacity(0.3),
       title: '11518',
     ),
     ImageMapRegion(
       shape: ImageMapShape.poly,
       path: Path()
-        ..moveTo(383, 505)
-        ..lineTo(386, 450)
-        ..lineTo(488, 457)
-        ..lineTo(481, 512)
+        ..moveTo(386, 502)..lineTo(389, 447)..lineTo(491, 454)..lineTo(485, 507)
         ..close(),
-      color: Colors.purple.withOpacity(0.3),
+      color: Colors.orange.withOpacity(0.3),
       title: '11517',
     ),
     ImageMapRegion(
       shape: ImageMapShape.poly,
       path: Path()
-        ..moveTo(386, 449)
-        ..lineTo(390, 394)
-        ..lineTo(494, 401)
-        ..lineTo(488, 456)
+        ..moveTo(389, 446)..lineTo(390, 415)..lineTo(496, 422)..lineTo(491, 453)
         ..close(),
-      color: Colors.orange.withOpacity(0.3),
+      color: Colors.pink.withOpacity(0.3),
       title: '11516',
     ),
     ImageMapRegion(
       shape: ImageMapShape.poly,
       path: Path()
-        ..moveTo(390, 393)
-        ..lineTo(394, 338)
-        ..lineTo(500, 345)
-        ..lineTo(494, 400)
+        ..moveTo(391, 414)..lineTo(393, 383)..lineTo(497, 389)..lineTo(494, 420)
         ..close(),
-      color: Colors.pink.withOpacity(0.3),
+      color: Colors.teal.withOpacity(0.3),
       title: '11515',
     ),
     ImageMapRegion(
       shape: ImageMapShape.poly,
       path: Path()
-        ..moveTo(394, 337)
-        ..lineTo(398, 282)
-        ..lineTo(506, 289)
-        ..lineTo(500, 344)
+        ..moveTo(392, 382)..lineTo(397, 303)..lineTo(515, 309)..lineTo(499, 387)
         ..close(),
-      color: Colors.teal.withOpacity(0.3),
+      color: Colors.indigo.withOpacity(0.3),
       title: '11514',
     ),
     ImageMapRegion(
       shape: ImageMapShape.poly,
       path: Path()
-        ..moveTo(398, 281)
-        ..lineTo(402, 226)
-        ..lineTo(512, 233)
-        ..lineTo(506, 288)
-        ..close(),
-      color: Colors.indigo.withOpacity(0.3),
+        ..moveTo(401, 217)..lineTo(414, 215)..lineTo(521, 221)..lineTo(530, 230)
+        ..lineTo(517, 310)..lineTo(397, 300)..close(),
+      color: Colors.lime.withOpacity(0.3),
       title: '11513',
+    ),
+    // Add more regions here...
+  ];
+
+  // Add these additional regions to the _regions list
+  ..addAll([
+    ImageMapRegion(
+      shape: ImageMapShape.poly,
+      path: Path()
+        ..moveTo(250, 672)..lineTo(349, 571)..lineTo(123, 558)..lineTo(130, 573)
+        ..lineTo(129, 580)..close(),
+      color: Colors.cyan.withOpacity(0.3),
+      title: '11511',
     ),
     ImageMapRegion(
       shape: ImageMapShape.poly,
       path: Path()
-        ..moveTo(402, 225)
-        ..lineTo(406, 170)
-        ..lineTo(518, 177)
-        ..lineTo(512, 232)
-        ..close(),
-      color: Colors.lime.withOpacity(0.3),
-      title: '11512',
+        ..moveTo(350, 571)..lineTo(357, 550)..lineTo(359, 514)..lineTo(354, 498)
+        ..lineTo(343, 493)..lineTo(303, 493)..lineTo(298, 567)..close(),
+      color: Colors.amber.withOpacity(0.3),
+      title: '11510',
     ),
-  ];
+    // Continue adding more regions...
+  ]);
 
   void _savePropertyOwner() {
     if (_name.isNotEmpty && _selectedProperty.isNotEmpty) {
