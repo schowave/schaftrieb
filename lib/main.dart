@@ -33,7 +33,7 @@ class PropertyNamePage extends StatefulWidget {
 class _PropertyNamePageState extends State<PropertyNamePage> {
   String _name = '';
   String _selectedProperty = '';
-  Map<String, String> _propertyOwners = {};
+  final Map<String, String> _propertyOwners = {};
 
   void _updateName(String name) {
     setState(() {
