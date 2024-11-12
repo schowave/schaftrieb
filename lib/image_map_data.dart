@@ -494,7 +494,6 @@ final List<ImageMapRegion> regions = [
       ..lineTo(535, 276)
       ..lineTo(537, 257)
       ..lineTo(539, 234)
-      ..lineTo(541, 223)
       ..lineTo(549, 220)
       ..close(),
     color: Colors.teal.withOpacity(0.3),
