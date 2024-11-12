@@ -71,23 +71,26 @@ class _PropertyNamePageState extends State<PropertyNamePage> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-              ImageMap(
-                image: const AssetImage('lib/umlegungsplan.png'),
-                imageSize: const Size(400, 400),
-                onTap: (area) => _selectProperty(area.name),
-                areas: [
-                  Area(
-                    name: 'Property 1',
-                    shape: Shape.rectangle,
-                    coords: [0, 0, 100, 100],
-                  ),
-                  Area(
-                    name: 'Property 2',
-                    shape: Shape.rectangle,
-                    coords: [100, 0, 200, 100],
-                  ),
-                  // Add more areas as needed
-                ],
+              SizedBox(
+                width: 400,
+                height: 400,
+                child: ImageMap(
+                  image: const AssetImage('lib/umlegungsplan.png'),
+                  onTap: (area) => _selectProperty(area.name),
+                  areas: [
+                    Area(
+                      name: 'Property 1',
+                      shape: Shape.rectangle,
+                      coords: [0, 0, 100, 100],
+                    ),
+                    Area(
+                      name: 'Property 2',
+                      shape: Shape.rectangle,
+                      coords: [100, 0, 200, 100],
+                    ),
+                    // Add more areas as needed
+                  ],
+                ),
               ),
               const SizedBox(height: 20),
               Text(
