@@ -51,7 +51,7 @@ class _PropertyNamePageState extends State<PropertyNamePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Image.asset(
-              'lib/img.png',
+              'lib/umlegungsplan.png',
               width: 200,
               height: 200,
               fit: BoxFit.contain,
