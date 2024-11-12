@@ -42,11 +42,79 @@ class _PropertyNamePageState extends State<PropertyNamePage> {
   }
 
   void _selectProperty(String property) {
+    print('_selectProperty called with: $property'); // More detailed debug print
     setState(() {
       _selectedProperty = property;
     });
-    print('Selected property: $property'); // Add this line for debugging
   }
+
+  void _onImageTap(TapDownDetails details, BoxConstraints constraints) {
+    final RenderBox box = context.findRenderObject() as RenderBox;
+    final Offset localPosition = box.globalToLocal(details.globalPosition);
+    print('Tap detected at: $localPosition'); // Print tap coordinates
+
+    // Calculate relative position within the image
+    final double relativeX = localPosition.dx / constraints.maxWidth;
+    final double relativeY = localPosition.dy / constraints.maxHeight;
+    print('Relative position: ($relativeX, $relativeY)');
+
+    // Check which region was tapped
+    for (var region in _regions) {
+      if (region.path.contains(Offset(relativeX * 800, relativeY * 800))) {
+        print('Region detected: ${region.title}');
+        _selectProperty(region.title ?? '');
+        return;
+      }
+    }
+    print('No region detected');
+  }
+
+  final List<ImageMapRegion> _regions = [
+    ImageMapRegion(
+      shape: ImageMapShape.rect,
+      path: Path()
+        ..moveTo(0, 0)
+        ..lineTo(400, 0)
+        ..lineTo(400, 400)
+        ..lineTo(0, 400)
+        ..close(),
+      color: Colors.blue.withOpacity(0.3),
+      title: 'Property 1',
+    ),
+    ImageMapRegion(
+      shape: ImageMapShape.rect,
+      path: Path()
+        ..moveTo(400, 0)
+        ..lineTo(800, 0)
+        ..lineTo(800, 400)
+        ..lineTo(400, 400)
+        ..close(),
+      color: Colors.green.withOpacity(0.3),
+      title: 'Property 2',
+    ),
+    ImageMapRegion(
+      shape: ImageMapShape.rect,
+      path: Path()
+        ..moveTo(0, 400)
+        ..lineTo(400, 400)
+        ..lineTo(400, 800)
+        ..lineTo(0, 800)
+        ..close(),
+      color: Colors.red.withOpacity(0.3),
+      title: 'Property 3',
+    ),
+    ImageMapRegion(
+      shape: ImageMapShape.rect,
+      path: Path()
+        ..moveTo(400, 400)
+        ..lineTo(800, 400)
+        ..lineTo(800, 800)
+        ..lineTo(400, 800)
+        ..close(),
+      color: Colors.yellow.withOpacity(0.3),
+      title: 'Property 4',
+    ),
+  ];
 
   void _savePropertyOwner() {
     if (_name.isNotEmpty && _selectedProperty.isNotEmpty) {
@@ -75,38 +143,21 @@ class _PropertyNamePageState extends State<PropertyNamePage> {
               SizedBox(
                 width: 800,
                 height: 800,
-                child: ImageMap(
-                  image: Image.asset('lib/umlegungsplan.png', fit: BoxFit.contain),
-                  onTap: (region) {
-                    if (region != null) {
-                      _selectProperty(region.title ?? '');
-                    }
+                child: LayoutBuilder(
+                  builder: (context, constraints) {
+                    return GestureDetector(
+                      onTapDown: (details) => _onImageTap(details, constraints),
+                      child: Stack(
+                        children: [
+                          Image.asset('lib/umlegungsplan.png', fit: BoxFit.contain),
+                          ImageMap(
+                            image: Image.asset('lib/umlegungsplan.png', fit: BoxFit.contain),
+                            regions: _regions,
+                          ),
+                        ],
+                      ),
+                    );
                   },
-                  regions: [
-                    ImageMapRegion(
-                      shape: ImageMapShape.rect,
-                      path: Path()
-                        ..moveTo(0, 0)
-                        ..lineTo(100, 0)
-                        ..lineTo(100, 100)
-                        ..lineTo(0, 100)
-                        ..close(),
-                      color: Colors.blue.withOpacity(0.3),
-                      title: 'Property 1',
-                    ),
-                    ImageMapRegion(
-                      shape: ImageMapShape.rect,
-                      path: Path()
-                        ..moveTo(100, 0)
-                        ..lineTo(200, 0)
-                        ..lineTo(200, 100)
-                        ..lineTo(100, 100)
-                        ..close(),
-                      color: Colors.green.withOpacity(0.3),
-                      title: 'Property 2',
-                    ),
-                    // Add more regions as needed
-                  ],
                 ),
               ),
               const SizedBox(height: 20),
