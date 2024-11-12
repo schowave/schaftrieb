@@ -154,7 +154,7 @@ class _PropertyNamePageState extends State<PropertyNamePage> {
                             image: Image.asset('lib/umlegungsplan.png', fit: BoxFit.contain),
                             regions: _regions,
                             onTap: (region) {
-                              if (region != null && region.title != null) {
+                              if (region.title != null) {
                                 _selectProperty(region.title!);
                               }
                             },
