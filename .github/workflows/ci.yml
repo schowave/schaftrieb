@@ -1,6 +1,6 @@
 name: CI
 
-# Analyze and test with the Flutter SDK pinned in mise.toml. Renovate automerges
+# Analyze, test and build the Android app with the toolchain pinned in mise.toml. Renovate automerges
 # its update PRs only when this passes.
 
 on:
@@ -13,14 +13,15 @@ permissions:
 
 jobs:
   check:
-    name: Analyze and test
+    name: Analyze, test and build
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
-      # Only Flutter is needed here; the JDK in mise.toml is for Android builds.
       - uses: jdx/mise-action@d5574b52816a478f9d4e6529a3f6ff17a8a36785 # v5.2.8
         with:
-          install_args: flutter
+          install_args: flutter java
       - run: mise run get
       - run: mise run analyze
       - run: mise run test
+      # Android SDK comes preinstalled on the runner (ANDROID_HOME).
+      - run: mise run build-android
