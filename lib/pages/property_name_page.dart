@@ -22,7 +22,7 @@ class _PropertyNamePageState extends State<PropertyNamePage> {
   }
 
   void _selectProperty(String property) {
-    print('_selectProperty called with: $property');
+    debugPrint('_selectProperty called with: $property');
     setState(() {
       _selectedProperty = property;
     });
@@ -34,7 +34,9 @@ class _PropertyNamePageState extends State<PropertyNamePage> {
         _propertyOwners[_selectedProperty] = _name;
       });
       ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text('Property owner saved: $_name for $_selectedProperty')),
+        SnackBar(
+            content:
+                Text('Property owner saved: $_name for $_selectedProperty')),
       );
     }
   }

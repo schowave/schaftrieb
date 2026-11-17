@@ -1,0 +1,26 @@
+name: CI
+
+# Analyze and test with the Flutter SDK pinned in mise.toml. Renovate automerges
+# its update PRs only when this passes.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    name: Analyze and test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      # Only Flutter is needed here; the JDK in mise.toml is for Android builds.
+      - uses: jdx/mise-action@d5574b52816a478f9d4e6529a3f6ff17a8a36785 # v5.2.8
+        with:
+          install_args: flutter
+      - run: mise run get
+      - run: mise run analyze
+      - run: mise run test

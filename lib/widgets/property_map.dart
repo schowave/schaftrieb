@@ -5,25 +5,26 @@ import '../image_map_data.dart' show regions;
 class PropertyMap extends StatelessWidget {
   final Function(String) onSelectProperty;
 
-  const PropertyMap({Key? key, required this.onSelectProperty}) : super(key: key);
+  const PropertyMap({super.key, required this.onSelectProperty});
 
-  void _onImageTap(TapDownDetails details, BoxConstraints constraints, BuildContext context) {
+  void _onImageTap(TapDownDetails details, BoxConstraints constraints,
+      BuildContext context) {
     final RenderBox box = context.findRenderObject() as RenderBox;
     final Offset localPosition = box.globalToLocal(details.globalPosition);
-    print('Tap detected at: $localPosition');
+    debugPrint('Tap detected at: $localPosition');
 
     final double relativeX = localPosition.dx / constraints.maxWidth;
     final double relativeY = localPosition.dy / constraints.maxHeight;
-    print('Relative position: ($relativeX, $relativeY)');
+    debugPrint('Relative position: ($relativeX, $relativeY)');
 
     for (var region in regions) {
       if (region.path.contains(Offset(relativeX * 800, relativeY * 800))) {
-        print('Region detected: ${region.title}');
+        debugPrint('Region detected: ${region.title}');
         onSelectProperty(region.title ?? '');
         return;
       }
     }
-    print('No region detected');
+    debugPrint('No region detected');
   }
 
   @override
@@ -39,7 +40,8 @@ class PropertyMap extends StatelessWidget {
               children: [
                 Image.asset('lib/umlegungsplan.png', fit: BoxFit.contain),
                 ImageMap(
-                  image: Image.asset('lib/umlegungsplan.png', fit: BoxFit.contain),
+                  image:
+                      Image.asset('lib/umlegungsplan.png', fit: BoxFit.contain),
                   regions: regions,
                   onTap: (region) {
                     if (region.title != null) {
