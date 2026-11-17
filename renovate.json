@@ -10,6 +10,11 @@
   "platformAutomerge": false,
   "packageRules": [
     {
+      "description": "Flutter Gradle plugin loader comes from the local Flutter SDK (includeBuild), not from a repository; its version follows the SDK",
+      "matchDepNames": ["dev.flutter.flutter-plugin-loader"],
+      "enabled": false
+    },
+    {
       "description": "Patch and minor updates in one PR, merged by themselves once CI is green",
       "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
       "groupName": "non-major dependencies",
