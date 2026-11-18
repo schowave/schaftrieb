@@ -1,10 +1,10 @@
 # Toolchain for this app. Renovate keeps these versions current (mise manager).
-# Flutter 3.24.5 is the SDK in .metadata (Dart 3.5.4, matches pubspec's sdk: ^3.5.4).
-# The Gradle plugin dev.flutter.flutter-plugin-loader comes from this SDK (android/settings.gradle).
-# JDK 17 for Android Gradle Plugin 8.1 / Gradle 8.3.
+# Flutter 3.50 (Dart 3.14, matches pubspec's sdk constraint). Its Gradle plugin, loaded from this SDK via
+# dev.flutter.flutter-plugin-loader (android/settings.gradle.kts), requires Gradle >= 9.3.1, AGP >= 9.1.1
+# and Kotlin Gradle plugin >= 2.4.10. JDK 25 runs Gradle 9.x / AGP 9.x.
 [tools]
-flutter = "3.24.5"
-java = "temurin-17"
+flutter = "3.50.0"
+java = "temurin-25"
 
 [tasks.get]
 description = "Fetch Dart/Flutter packages"
