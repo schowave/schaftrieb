@@ -3,7 +3,7 @@
 # The Gradle plugin dev.flutter.flutter-plugin-loader comes from this SDK (android/settings.gradle).
 # JDK 17 for Android Gradle Plugin 8.1 / Gradle 8.3.
 [tools]
-flutter = "3.24.5"
+flutter = "3.50.0"
 java = "temurin-17"
 
 [tasks.get]

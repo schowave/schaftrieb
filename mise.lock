@@ -3,55 +3,55 @@
 lockfile_version = 4
 
 [[tools.flutter]]
-version = "3.24.5"
+version = "3.50.0"
 backend = "http:flutter"
-specifiers = ["3.24.5"]
+specifiers = ["3.50.0"]
 
 [tools.flutter."platforms.linux-x64"]
-checksum = "sha256:a7c82f551a9eae018e078f6bb186171e5a77920d35a3d75a61d9a593d0a9e4ae"
-url = "https://storage.googleapis.com/flutter_infra_release/releases/stable/linux/flutter_linux_3.24.5-stable.tar.xz"
+checksum = "sha256:6ea2d806fd57269ae783e6788e2a81fc26eaad782f1e0d0ff38623bb765ff9f5"
+url = "https://storage.googleapis.com/flutter_infra_release/releases/stable/linux/flutter_linux_3.50.0-stable.tar.xz"
 
 [tools.flutter."platforms.linux-x64-musl"]
-checksum = "sha256:a7c82f551a9eae018e078f6bb186171e5a77920d35a3d75a61d9a593d0a9e4ae"
-url = "https://storage.googleapis.com/flutter_infra_release/releases/stable/linux/flutter_linux_3.24.5-stable.tar.xz"
+checksum = "sha256:6ea2d806fd57269ae783e6788e2a81fc26eaad782f1e0d0ff38623bb765ff9f5"
+url = "https://storage.googleapis.com/flutter_infra_release/releases/stable/linux/flutter_linux_3.50.0-stable.tar.xz"
 
 [tools.flutter."platforms.macos-arm64"]
-checksum = "blake3:f6b0b9e717b5487613409a294b17a492e917ce924b0391472803672c70a9177f"
-url = "https://storage.googleapis.com/flutter_infra_release/releases/stable/macos/flutter_macos_arm64_3.24.5-stable.zip"
+checksum = "sha256:ed2d08a3e3c023e84cbe9316d21bd88fda6ee9552f90c1eb4da41a07c170fb35"
+url = "https://storage.googleapis.com/flutter_infra_release/releases/stable/macos/flutter_macos_arm64_3.50.0-stable.zip"
 
 [tools.flutter."platforms.macos-x64"]
-checksum = "sha256:30f337aeb2f7a0d324cfae9a3718c1caa8a5abcb19eff933b337332465f9cfe8"
-url = "https://storage.googleapis.com/flutter_infra_release/releases/stable/macos/flutter_macos_3.24.5-stable.zip"
+checksum = "sha256:d4e1bf2e2fc0c2e92267f45660c16a7d805e84ad42cb40b64b466446bffe48e0"
+url = "https://storage.googleapis.com/flutter_infra_release/releases/stable/macos/flutter_macos_3.50.0-stable.zip"
 
 [tools.flutter."platforms.windows-x64"]
-checksum = "sha256:b8a7485acd3c6fb23a76b7ac09f89e8d93d62fbff7147c6f5f8c5686d949eeac"
-url = "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_3.24.5-stable.zip"
+checksum = "sha256:35fb843409c80a1c69b64bbae1756bba437222f909622d83540e266e1759aab8"
+url = "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_3.50.0-stable.zip"
 
 [[tools.java]]
-version = "temurin-17.0.19+10"
+version = "temurin-17.0.21+9"
 backend = "core:java"
 specifiers = ["temurin-17"]
 
 [tools.java."platforms.linux-arm64"]
-checksum = "sha256:83a52172678ec8975164648654869cb2e71d7c748b47aca94b29bbfa10c18e81"
-url = "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.19%2B10/OpenJDK17U-jdk_aarch64_linux_hotspot_17.0.19_10.tar.gz"
+checksum = "sha256:3e4eca7ead088f080af1476007decf010a240a1eb4e1e78c54fa32fbcc347084"
+url = "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_aarch64_linux_hotspot_17.0.21_9.tar.gz"
 
 [tools.java."platforms.linux-x64"]
-checksum = "sha256:d8afc263758141a66e0e3aafc321e783f7016696f4eaea067d340a269037d331"
-url = "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.19%2B10/OpenJDK17U-jdk_x64_linux_hotspot_17.0.19_10.tar.gz"
+checksum = "sha256:8b9b611d917e3dfd8419d3566b5949226f69b052fed7e109c1368add1dfe8711"
+url = "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_x64_linux_hotspot_17.0.21_9.tar.gz"
 
 [tools.java."platforms.linux-x64-musl"]
-checksum = "sha256:960b4090b75a887bb21a915a294bee3a97cd11876967c95e5bd29d9ec4812e17"
-url = "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.19%2B10/OpenJDK17U-jdk_x64_alpine-linux_hotspot_17.0.19_10.tar.gz"
+checksum = "sha256:db018054d52c1c109ad128c1412ead2d84ae91052ce60ca370df17b6a89831f5"
+url = "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_x64_alpine-linux_hotspot_17.0.21_9.tar.gz"
 
 [tools.java."platforms.macos-arm64"]
-checksum = "sha256:8fa1eff40bb637a33613b2ccb8b12c70dc3661cc22cf8e784943715769a05336"
-url = "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.19%2B10/OpenJDK17U-jdk_aarch64_mac_hotspot_17.0.19_10.tar.gz"
+checksum = "sha256:78b08c7f5a0598242d5719c022e19479cb4a3aa45c37c19726a757a469ed1c15"
+url = "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_aarch64_mac_hotspot_17.0.21_9.tar.gz"
 
 [tools.java."platforms.macos-x64"]
-checksum = "sha256:03632d1fbf139ab3719a9f4b47dc206251449b87557143c822336dbf8c06560f"
-url = "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.19%2B10/OpenJDK17U-jdk_x64_mac_hotspot_17.0.19_10.tar.gz"
+checksum = "sha256:868f5c672b3389fdbe48e44f94ae170f01668b1401360944fc7159d7cc9772cc"
+url = "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_x64_mac_hotspot_17.0.21_9.tar.gz"
 
 [tools.java."platforms.windows-x64"]
-checksum = "sha256:b5b235c48adf6a081874b812c630b9f4b5f637b7a5ed18b9174d08a41ec4c235"
-url = "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.19%2B10/OpenJDK17U-jdk_x64_windows_hotspot_17.0.19_10.zip"
+checksum = "sha256:98518ecf554465057ee5509462631deeee374bc368c12a411d225cd29381f84b"
+url = "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_x64_windows_hotspot_17.0.21_9.zip"
