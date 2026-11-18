@@ -1,7 +1,7 @@
 name: CI
 
-# Analyze, test and build the Android app with the toolchain pinned in mise.toml. Renovate automerges
-# its update PRs only when this passes.
+# Runs `mise run setup` and `mise run check` (analyze, test, release APK build) with the toolchain
+# pinned in mise.toml, the same as locally. Renovate automerges its update PRs only when this passes.
 
 on:
   push:
@@ -20,8 +20,6 @@ jobs:
       - uses: jdx/mise-action@236a21c3b91f5db6d4e174b348674a0f0caac06d # v5.2.9
         with:
           install_args: flutter java
-      - run: mise run get
-      - run: mise run analyze
-      - run: mise run test
+      - run: mise run setup
       # Android SDK comes preinstalled on the runner (ANDROID_HOME).
-      - run: mise run build-android
+      - run: mise run check
