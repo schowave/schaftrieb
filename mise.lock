@@ -28,30 +28,30 @@ checksum = "sha256:b8a7485acd3c6fb23a76b7ac09f89e8d93d62fbff7147c6f5f8c5686d949e
 url = "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_3.24.5-stable.zip"
 
 [[tools.java]]
-version = "temurin-17.0.21+9"
+version = "temurin-25.0.5+8.0.LTS"
 backend = "core:java"
 specifiers = ["temurin-17"]
 
 [tools.java."platforms.linux-arm64"]
-checksum = "sha256:3e4eca7ead088f080af1476007decf010a240a1eb4e1e78c54fa32fbcc347084"
-url = "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_aarch64_linux_hotspot_17.0.21_9.tar.gz"
+checksum = "sha256:bb5b2ded252f21c6090cf780b0a408ad0d83bbb557e702955643557f13231880"
+url = "https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.5%2B8/OpenJDK25U-jdk_aarch64_linux_hotspot_25.0.5_8.tar.gz"
 
 [tools.java."platforms.linux-x64"]
-checksum = "sha256:8b9b611d917e3dfd8419d3566b5949226f69b052fed7e109c1368add1dfe8711"
-url = "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_x64_linux_hotspot_17.0.21_9.tar.gz"
+checksum = "sha256:68982529869257d0ee6b824ec5aa270ff8b118bb438670da0b97ebdab178d7fb"
+url = "https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.5%2B8/OpenJDK25U-jdk_x64_linux_hotspot_25.0.5_8.tar.gz"
 
 [tools.java."platforms.linux-x64-musl"]
-checksum = "sha256:db018054d52c1c109ad128c1412ead2d84ae91052ce60ca370df17b6a89831f5"
-url = "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_x64_alpine-linux_hotspot_17.0.21_9.tar.gz"
+checksum = "sha256:efc86581260b73c340c313e7577c4c85d6a8a899edc3748d78bee5238fe44a4e"
+url = "https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.5%2B8/OpenJDK25U-jdk_x64_alpine-linux_hotspot_25.0.5_8.tar.gz"
 
 [tools.java."platforms.macos-arm64"]
-checksum = "sha256:78b08c7f5a0598242d5719c022e19479cb4a3aa45c37c19726a757a469ed1c15"
-url = "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_aarch64_mac_hotspot_17.0.21_9.tar.gz"
+checksum = "sha256:36dc14d797aaff6d89aab302cd053fdba6207dfdcf772052fa7b023a94b0e857"
+url = "https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.5%2B8/OpenJDK25U-jdk_aarch64_mac_hotspot_25.0.5_8.tar.gz"
 
 [tools.java."platforms.macos-x64"]
-checksum = "sha256:868f5c672b3389fdbe48e44f94ae170f01668b1401360944fc7159d7cc9772cc"
-url = "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_x64_mac_hotspot_17.0.21_9.tar.gz"
+checksum = "sha256:32cd4d2151c91aa00d0fc911edfd05245ed40fa6b1aa894d5f35c928cd67a59d"
+url = "https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.5%2B8/OpenJDK25U-jdk_x64_mac_hotspot_25.0.5_8.tar.gz"
 
 [tools.java."platforms.windows-x64"]
-checksum = "sha256:98518ecf554465057ee5509462631deeee374bc368c12a411d225cd29381f84b"
-url = "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_x64_windows_hotspot_17.0.21_9.zip"
+checksum = "sha256:636bdc13dc649ddc7d5921c5c7d23cca6e44fd19d662b45cc9c02135a6c96c42"
+url = "https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.5%2B8/OpenJDK25U-jdk_x64_windows_hotspot_25.0.5_8.zip"
