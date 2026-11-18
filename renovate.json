@@ -7,7 +7,7 @@
   "pre-commit": { "enabled": true },
   "lockFileMaintenance": { "enabled": true, "automerge": true },
   "automergeType": "pr",
-  "platformAutomerge": false,
+  "platformAutomerge": true,
   "packageRules": [
     {
       "description": "Flutter Gradle plugin loader comes from the local Flutter SDK (includeBuild), not from a repository; its version follows the SDK",
