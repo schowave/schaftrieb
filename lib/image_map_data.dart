@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 import 'package:flutter_image_map/flutter_image_map.dart';
 
 final List<ImageMapRegion> regions = [
@@ -15,7 +15,7 @@ final List<ImageMapRegion> regions = [
       ..lineTo(288, 708)
       ..lineTo(269, 690)
       ..close(),
-    color: Colors.teal.withOpacity(0.3),
+    color: Colors.teal.withValues(alpha: 0.3),
     title: '11522',
   ),
   ImageMapRegion(
@@ -28,7 +28,7 @@ final List<ImageMapRegion> regions = [
       ..lineTo(380, 620)
       ..lineTo(355, 600)
       ..close(),
-    color: Colors.teal.withOpacity(0.3),
+    color: Colors.teal.withValues(alpha: 0.3),
     title: '11521',
   ),
   ImageMapRegion(
@@ -40,7 +40,7 @@ final List<ImageMapRegion> regions = [
       ..lineTo(378, 621)
       ..lineTo(356, 599)
       ..close(),
-    color: Colors.teal.withOpacity(0.3),
+    color: Colors.teal.withValues(alpha: 0.3),
     title: '11520',
   ),
   ImageMapRegion(
@@ -51,7 +51,7 @@ final List<ImageMapRegion> regions = [
       ..lineTo(477, 578)
       ..lineTo(377, 572)
       ..close(),
-    color: Colors.teal.withOpacity(0.3),
+    color: Colors.teal.withValues(alpha: 0.3),
     title: '11519',
   ),
   ImageMapRegion(
@@ -62,7 +62,7 @@ final List<ImageMapRegion> regions = [
       ..lineTo(481, 548)
       ..lineTo(384, 542)
       ..close(),
-    color: Colors.teal.withOpacity(0.3),
+    color: Colors.teal.withValues(alpha: 0.3),
     title: '11518',
   ),
   ImageMapRegion(
@@ -73,7 +73,7 @@ final List<ImageMapRegion> regions = [
       ..lineTo(491, 454)
       ..lineTo(485, 507)
       ..close(),
-    color: Colors.teal.withOpacity(0.3),
+    color: Colors.teal.withValues(alpha: 0.3),
     title: '11517',
   ),
   ImageMapRegion(
@@ -84,7 +84,7 @@ final List<ImageMapRegion> regions = [
       ..lineTo(496, 422)
       ..lineTo(491, 453)
       ..close(),
-    color: Colors.teal.withOpacity(0.3),
+    color: Colors.teal.withValues(alpha: 0.3),
     title: '11516',
   ),
   ImageMapRegion(
@@ -95,7 +95,7 @@ final List<ImageMapRegion> regions = [
       ..lineTo(497, 389)
       ..lineTo(494, 420)
       ..close(),
-    color: Colors.teal.withOpacity(0.3),
+    color: Colors.teal.withValues(alpha: 0.3),
     title: '11515',
   ),
   ImageMapRegion(
@@ -106,7 +106,7 @@ final List<ImageMapRegion> regions = [
       ..lineTo(515, 309)
       ..lineTo(499, 387)
       ..close(),
-    color: Colors.teal.withOpacity(0.3),
+    color: Colors.teal.withValues(alpha: 0.3),
     title: '11514',
   ),
   ImageMapRegion(
@@ -119,7 +119,7 @@ final List<ImageMapRegion> regions = [
       ..lineTo(517, 310)
       ..lineTo(397, 300)
       ..close(),
-    color: Colors.teal.withOpacity(0.3),
+    color: Colors.teal.withValues(alpha: 0.3),
     title: '11513',
   ),
   ImageMapRegion(
@@ -131,7 +131,7 @@ final List<ImageMapRegion> regions = [
       ..lineTo(130, 573)
       ..lineTo(129, 580)
       ..close(),
-    color: Colors.teal.withOpacity(0.3),
+    color: Colors.teal.withValues(alpha: 0.3),
     title: '11511',
   ),
   ImageMapRegion(
@@ -145,7 +145,7 @@ final List<ImageMapRegion> regions = [
       ..lineTo(303, 493)
       ..lineTo(298, 567)
       ..close(),
-    color: Colors.teal.withOpacity(0.3),
+    color: Colors.teal.withValues(alpha: 0.3),
     title: '11510',
   ),
   ImageMapRegion(
@@ -156,7 +156,7 @@ final List<ImageMapRegion> regions = [
       ..lineTo(241, 564)
       ..lineTo(246, 490)
       ..close(),
-    color: Colors.teal.withOpacity(0.3),
+    color: Colors.teal.withValues(alpha: 0.3),
     title: '11509',
   ),
   ImageMapRegion(
@@ -167,7 +167,7 @@ final List<ImageMapRegion> regions = [
       ..lineTo(217, 488)
       ..lineTo(245, 489)
       ..close(),
-    color: Colors.teal.withOpacity(0.3),
+    color: Colors.teal.withValues(alpha: 0.3),
     title: '11508',
   ),
   ImageMapRegion(
@@ -178,7 +178,7 @@ final List<ImageMapRegion> regions = [
       ..lineTo(188, 487)
       ..lineTo(214, 487)
       ..close(),
-    color: Colors.teal.withOpacity(0.3),
+    color: Colors.teal.withValues(alpha: 0.3),
     title: '11507',
   ),
   ImageMapRegion(
@@ -189,7 +189,7 @@ final List<ImageMapRegion> regions = [
       ..lineTo(126, 556)
       ..lineTo(129, 482)
       ..close(),
-    color: Colors.teal.withOpacity(0.3),
+    color: Colors.teal.withValues(alpha: 0.3),
     title: '11506',
   ),
   ImageMapRegion(
@@ -203,7 +203,7 @@ final List<ImageMapRegion> regions = [
       ..lineTo(64, 463)
       ..lineTo(64, 447)
       ..close(),
-    color: Colors.teal.withOpacity(0.3),
+    color: Colors.teal.withValues(alpha: 0.3),
     title: '11505',
   ),
   ImageMapRegion(
@@ -218,7 +218,7 @@ final List<ImageMapRegion> regions = [
       ..lineTo(133, 451)
       ..lineTo(64, 446)
       ..close(),
-    color: Colors.teal.withOpacity(0.3),
+    color: Colors.teal.withValues(alpha: 0.3),
     title: '11504',
   ),
   ImageMapRegion(
@@ -229,7 +229,7 @@ final List<ImageMapRegion> regions = [
       ..lineTo(92, 360)
       ..lineTo(199, 365)
       ..close(),
-    color: Colors.teal.withOpacity(0.3),
+    color: Colors.teal.withValues(alpha: 0.3),
     title: '11503',
   ),
   ImageMapRegion(
@@ -240,7 +240,7 @@ final List<ImageMapRegion> regions = [
       ..lineTo(115, 312)
       ..lineTo(93, 358)
       ..close(),
-    color: Colors.teal.withOpacity(0.3),
+    color: Colors.teal.withValues(alpha: 0.3),
     title: '11502',
   ),
   ImageMapRegion(
@@ -251,7 +251,7 @@ final List<ImageMapRegion> regions = [
       ..lineTo(138, 259)
       ..lineTo(115, 311)
       ..close(),
-    color: Colors.teal.withOpacity(0.3),
+    color: Colors.teal.withValues(alpha: 0.3),
     title: '11501',
   ),
   ImageMapRegion(
@@ -262,7 +262,7 @@ final List<ImageMapRegion> regions = [
       ..lineTo(164, 197)
       ..lineTo(139, 259)
       ..close(),
-    color: Colors.teal.withOpacity(0.3),
+    color: Colors.teal.withValues(alpha: 0.3),
     title: '11500',
   ),
   ImageMapRegion(
@@ -275,7 +275,7 @@ final List<ImageMapRegion> regions = [
       ..lineTo(215, 462)
       ..lineTo(228, 469)
       ..close(),
-    color: Colors.teal.withOpacity(0.3),
+    color: Colors.teal.withValues(alpha: 0.3),
     title: '11493',
   ),
   ImageMapRegion(
@@ -286,7 +286,7 @@ final List<ImageMapRegion> regions = [
       ..lineTo(217, 371)
       ..lineTo(212, 418)
       ..close(),
-    color: Colors.teal.withOpacity(0.3),
+    color: Colors.teal.withValues(alpha: 0.3),
     title: '11494',
   ),
   ImageMapRegion(
@@ -297,7 +297,7 @@ final List<ImageMapRegion> regions = [
       ..lineTo(219, 322)
       ..lineTo(216, 370)
       ..close(),
-    color: Colors.teal.withOpacity(0.3),
+    color: Colors.teal.withValues(alpha: 0.3),
     title: '11495',
   ),
   ImageMapRegion(
@@ -308,7 +308,7 @@ final List<ImageMapRegion> regions = [
       ..lineTo(220, 291)
       ..lineTo(297, 296)
       ..close(),
-    color: Colors.teal.withOpacity(0.3),
+    color: Colors.teal.withValues(alpha: 0.3),
     title: '11496',
   ),
   ImageMapRegion(
@@ -319,7 +319,7 @@ final List<ImageMapRegion> regions = [
       ..lineTo(223, 262)
       ..lineTo(222, 290)
       ..close(),
-    color: Colors.teal.withOpacity(0.3),
+    color: Colors.teal.withValues(alpha: 0.3),
     title: '11497',
   ),
   ImageMapRegion(
@@ -330,7 +330,7 @@ final List<ImageMapRegion> regions = [
       ..lineTo(224, 214)
       ..lineTo(222, 260)
       ..close(),
-    color: Colors.teal.withOpacity(0.3),
+    color: Colors.teal.withValues(alpha: 0.3),
     title: '11498',
   ),
   ImageMapRegion(
@@ -343,7 +343,7 @@ final List<ImageMapRegion> regions = [
       ..lineTo(228, 179)
       ..lineTo(226, 213)
       ..close(),
-    color: Colors.teal.withOpacity(0.3),
+    color: Colors.teal.withValues(alpha: 0.3),
     title: '11499',
   ),
   ImageMapRegion(
@@ -357,7 +357,7 @@ final List<ImageMapRegion> regions = [
       ..lineTo(196, 93)
       ..lineTo(183, 142)
       ..close(),
-    color: Colors.teal.withOpacity(0.3),
+    color: Colors.teal.withValues(alpha: 0.3),
     title: '11480',
   ),
   ImageMapRegion(
@@ -368,7 +368,7 @@ final List<ImageMapRegion> regions = [
       ..lineTo(301, 67)
       ..lineTo(295, 147)
       ..close(),
-    color: Colors.teal.withOpacity(0.3),
+    color: Colors.teal.withValues(alpha: 0.3),
     title: '11481',
   ),
   ImageMapRegion(
@@ -381,7 +381,7 @@ final List<ImageMapRegion> regions = [
       ..lineTo(515, 134)
       ..lineTo(521, 122)
       ..close(),
-    color: Colors.teal.withOpacity(0.3),
+    color: Colors.teal.withValues(alpha: 0.3),
     title: '11482',
   ),
   ImageMapRegion(
@@ -394,7 +394,7 @@ final List<ImageMapRegion> regions = [
       ..lineTo(360, 171)
       ..lineTo(303, 168)
       ..close(),
-    color: Colors.teal.withOpacity(0.3),
+    color: Colors.teal.withValues(alpha: 0.3),
     title: '11484',
   ),
   ImageMapRegion(
@@ -405,7 +405,7 @@ final List<ImageMapRegion> regions = [
       ..lineTo(303, 197)
       ..lineTo(378, 202)
       ..close(),
-    color: Colors.teal.withOpacity(0.3),
+    color: Colors.teal.withValues(alpha: 0.3),
     title: '11485',
   ),
   ImageMapRegion(
@@ -416,7 +416,7 @@ final List<ImageMapRegion> regions = [
       ..lineTo(301, 255)
       ..lineTo(375, 259)
       ..close(),
-    color: Colors.teal.withOpacity(0.3),
+    color: Colors.teal.withValues(alpha: 0.3),
     title: '11486',
   ),
   ImageMapRegion(
@@ -427,7 +427,7 @@ final List<ImageMapRegion> regions = [
       ..lineTo(301, 254)
       ..lineTo(374, 260)
       ..close(),
-    color: Colors.teal.withOpacity(0.3),
+    color: Colors.teal.withValues(alpha: 0.3),
     title: '11487',
   ),
   ImageMapRegion(
@@ -438,7 +438,7 @@ final List<ImageMapRegion> regions = [
       ..lineTo(294, 338)
       ..lineTo(297, 283)
       ..close(),
-    color: Colors.teal.withOpacity(0.3),
+    color: Colors.teal.withValues(alpha: 0.3),
     title: '11488',
   ),
   ImageMapRegion(
@@ -449,7 +449,7 @@ final List<ImageMapRegion> regions = [
       ..lineTo(295, 340)
       ..lineTo(370, 343)
       ..close(),
-    color: Colors.teal.withOpacity(0.3),
+    color: Colors.teal.withValues(alpha: 0.3),
     title: '11489',
   ),
   ImageMapRegion(
@@ -460,7 +460,7 @@ final List<ImageMapRegion> regions = [
       ..lineTo(294, 367)
       ..lineTo(368, 372)
       ..close(),
-    color: Colors.teal.withOpacity(0.3),
+    color: Colors.teal.withValues(alpha: 0.3),
     title: '11490',
   ),
   ImageMapRegion(
@@ -471,7 +471,7 @@ final List<ImageMapRegion> regions = [
       ..lineTo(288, 425)
       ..lineTo(292, 397)
       ..close(),
-    color: Colors.teal.withOpacity(0.3),
+    color: Colors.teal.withValues(alpha: 0.3),
     title: '11491',
   ),
   ImageMapRegion(
@@ -482,7 +482,7 @@ final List<ImageMapRegion> regions = [
       ..lineTo(289, 426)
       ..lineTo(365, 430)
       ..close(),
-    color: Colors.teal.withOpacity(0.3),
+    color: Colors.teal.withValues(alpha: 0.3),
     title: '11492',
   ),
   ImageMapRegion(
@@ -496,7 +496,7 @@ final List<ImageMapRegion> regions = [
       ..lineTo(539, 234)
       ..lineTo(549, 220)
       ..close(),
-    color: Colors.teal.withOpacity(0.3),
+    color: Colors.teal.withValues(alpha: 0.3),
     title: '11529',
   ),
   ImageMapRegion(
@@ -510,7 +510,7 @@ final List<ImageMapRegion> regions = [
       ..lineTo(544, 195)
       ..lineTo(558, 204)
       ..close(),
-    color: Colors.teal.withOpacity(0.3),
+    color: Colors.teal.withValues(alpha: 0.3),
     title: '11525',
   ),
   ImageMapRegion(
@@ -521,7 +521,7 @@ final List<ImageMapRegion> regions = [
       ..lineTo(696, 134)
       ..lineTo(692, 209)
       ..close(),
-    color: Colors.teal.withOpacity(0.3),
+    color: Colors.teal.withValues(alpha: 0.3),
     title: '11526',
   ),
   ImageMapRegion(
@@ -532,7 +532,7 @@ final List<ImageMapRegion> regions = [
       ..lineTo(756, 138)
       ..lineTo(752, 214)
       ..close(),
-    color: Colors.teal.withOpacity(0.3),
+    color: Colors.teal.withValues(alpha: 0.3),
     title: '11527',
   ),
   ImageMapRegion(
@@ -544,7 +544,7 @@ final List<ImageMapRegion> regions = [
       ..lineTo(815, 142)
       ..lineTo(812, 219)
       ..close(),
-    color: Colors.teal.withOpacity(0.3),
+    color: Colors.teal.withValues(alpha: 0.3),
     title: '11528',
   ),
   ImageMapRegion(
@@ -556,7 +556,7 @@ final List<ImageMapRegion> regions = [
       ..lineTo(906, 225)
       ..lineTo(902, 279)
       ..close(),
-    color: Colors.teal.withOpacity(0.3),
+    color: Colors.teal.withValues(alpha: 0.3),
     title: '11561',
   ),
   ImageMapRegion(
@@ -567,7 +567,7 @@ final List<ImageMapRegion> regions = [
       ..lineTo(900, 336)
       ..lineTo(979, 342)
       ..close(),
-    color: Colors.teal.withOpacity(0.3),
+    color: Colors.teal.withValues(alpha: 0.3),
     title: '11560',
   ),
   ImageMapRegion(
@@ -580,7 +580,7 @@ final List<ImageMapRegion> regions = [
       ..lineTo(897, 372)
       ..lineTo(900, 335)
       ..close(),
-    color: Colors.teal.withOpacity(0.3),
+    color: Colors.teal.withValues(alpha: 0.3),
     title: '11559',
   ),
   ImageMapRegion(
@@ -591,7 +591,7 @@ final List<ImageMapRegion> regions = [
       ..lineTo(977, 392)
       ..lineTo(1013, 396)
       ..close(),
-    color: Colors.teal.withOpacity(0.3),
+    color: Colors.teal.withValues(alpha: 0.3),
     title: '11558',
   ),
   ImageMapRegion(
@@ -602,7 +602,7 @@ final List<ImageMapRegion> regions = [
       ..lineTo(1012, 396)
       ..lineTo(1018, 317)
       ..close(),
-    color: Colors.teal.withOpacity(0.3),
+    color: Colors.teal.withValues(alpha: 0.3),
     title: '11557',
   ),
   ImageMapRegion(
@@ -615,7 +615,7 @@ final List<ImageMapRegion> regions = [
       ..lineTo(826, 239)
       ..lineTo(822, 300)
       ..close(),
-    color: Colors.teal.withOpacity(0.3),
+    color: Colors.teal.withValues(alpha: 0.3),
     title: '11536',
   ),
   ImageMapRegion(
@@ -626,7 +626,7 @@ final List<ImageMapRegion> regions = [
       ..lineTo(765, 236)
       ..lineTo(761, 297)
       ..close(),
-    color: Colors.teal.withOpacity(0.3),
+    color: Colors.teal.withValues(alpha: 0.3),
     title: '11535',
   ),
   ImageMapRegion(
@@ -639,7 +639,7 @@ final List<ImageMapRegion> regions = [
       ..lineTo(703, 246)
       ..lineTo(700, 294)
       ..close(),
-    color: Colors.teal.withOpacity(0.3),
+    color: Colors.teal.withValues(alpha: 0.3),
     title: '11534',
   ),
   ImageMapRegion(
@@ -652,7 +652,7 @@ final List<ImageMapRegion> regions = [
       ..lineTo(697, 350)
       ..lineTo(700, 294)
       ..close(),
-    color: Colors.teal.withOpacity(0.3),
+    color: Colors.teal.withValues(alpha: 0.3),
     title: '11539',
   ),
   ImageMapRegion(
@@ -665,7 +665,7 @@ final List<ImageMapRegion> regions = [
       ..lineTo(610, 226)
       ..lineTo(607, 272)
       ..close(),
-    color: Colors.teal.withOpacity(0.3),
+    color: Colors.teal.withValues(alpha: 0.3),
     title: '11530',
   ),
   ImageMapRegion(
@@ -676,7 +676,7 @@ final List<ImageMapRegion> regions = [
       ..lineTo(607, 274)
       ..lineTo(605, 322)
       ..close(),
-    color: Colors.teal.withOpacity(0.3),
+    color: Colors.teal.withValues(alpha: 0.3),
     title: '11531',
   ),
   ImageMapRegion(
@@ -688,7 +688,7 @@ final List<ImageMapRegion> regions = [
       ..lineTo(604, 353)
       ..lineTo(605, 324)
       ..close(),
-    color: Colors.teal.withOpacity(0.3),
+    color: Colors.teal.withValues(alpha: 0.3),
     title: '11532',
   ),
   ImageMapRegion(
@@ -699,7 +699,7 @@ final List<ImageMapRegion> regions = [
       ..lineTo(759, 369)
       ..lineTo(765, 296)
       ..close(),
-    color: Colors.teal.withOpacity(0.3),
+    color: Colors.teal.withValues(alpha: 0.3),
     title: '11538',
   ),
   ImageMapRegion(
@@ -712,7 +712,7 @@ final List<ImageMapRegion> regions = [
       ..lineTo(875, 371)
       ..lineTo(880, 362)
       ..close(),
-    color: Colors.teal.withOpacity(0.3),
+    color: Colors.teal.withValues(alpha: 0.3),
     title: '11537',
   ),
   ImageMapRegion(
@@ -723,7 +723,7 @@ final List<ImageMapRegion> regions = [
       ..lineTo(1062, 548)
       ..lineTo(1067, 446)
       ..close(),
-    color: Colors.teal.withOpacity(0.3),
+    color: Colors.teal.withValues(alpha: 0.3),
     title: '11554',
   ),
   ImageMapRegion(
@@ -734,7 +734,7 @@ final List<ImageMapRegion> regions = [
       ..lineTo(1061, 549)
       ..lineTo(1034, 537)
       ..close(),
-    color: Colors.teal.withOpacity(0.3),
+    color: Colors.teal.withValues(alpha: 0.3),
     title: '11553',
   ),
   ImageMapRegion(
@@ -745,7 +745,7 @@ final List<ImageMapRegion> regions = [
       ..lineTo(1008, 528)
       ..lineTo(1012, 415)
       ..close(),
-    color: Colors.teal.withOpacity(0.3),
+    color: Colors.teal.withValues(alpha: 0.3),
     title: '11552',
   ),
   ImageMapRegion(
@@ -756,7 +756,7 @@ final List<ImageMapRegion> regions = [
       ..lineTo(979, 516)
       ..lineTo(987, 413)
       ..close(),
-    color: Colors.teal.withOpacity(0.3),
+    color: Colors.teal.withValues(alpha: 0.3),
     title: '11551',
   ),
   ImageMapRegion(
@@ -767,7 +767,7 @@ final List<ImageMapRegion> regions = [
       ..lineTo(954, 508)
       ..lineTo(960, 414)
       ..close(),
-    color: Colors.teal.withOpacity(0.3),
+    color: Colors.teal.withValues(alpha: 0.3),
     title: '11550',
   ),
   ImageMapRegion(
@@ -778,7 +778,7 @@ final List<ImageMapRegion> regions = [
       ..lineTo(927, 496)
       ..lineTo(932, 410)
       ..close(),
-    color: Colors.teal.withOpacity(0.3),
+    color: Colors.teal.withValues(alpha: 0.3),
     title: '11549',
   ),
   ImageMapRegion(
@@ -789,7 +789,7 @@ final List<ImageMapRegion> regions = [
       ..lineTo(899, 494)
       ..lineTo(903, 409)
       ..close(),
-    color: Colors.teal.withOpacity(0.3),
+    color: Colors.teal.withValues(alpha: 0.3),
     title: '11548',
   ),
   ImageMapRegion(
@@ -800,7 +800,7 @@ final List<ImageMapRegion> regions = [
       ..lineTo(873, 491)
       ..lineTo(898, 492)
       ..close(),
-    color: Colors.teal.withOpacity(0.3),
+    color: Colors.teal.withValues(alpha: 0.3),
     title: '11547',
   ),
   ImageMapRegion(
@@ -811,7 +811,7 @@ final List<ImageMapRegion> regions = [
       ..lineTo(845, 472)
       ..lineTo(874, 472)
       ..close(),
-    color: Colors.teal.withOpacity(0.3),
+    color: Colors.teal.withValues(alpha: 0.3),
     title: '11544',
   ),
   ImageMapRegion(
@@ -822,7 +822,7 @@ final List<ImageMapRegion> regions = [
       ..lineTo(815, 469)
       ..lineTo(843, 473)
       ..close(),
-    color: Colors.teal.withOpacity(0.3),
+    color: Colors.teal.withValues(alpha: 0.3),
     title: '11543',
   ),
   ImageMapRegion(
@@ -833,7 +833,7 @@ final List<ImageMapRegion> regions = [
       ..lineTo(751, 440)
       ..lineTo(814, 469)
       ..close(),
-    color: Colors.teal.withOpacity(0.3),
+    color: Colors.teal.withValues(alpha: 0.3),
     title: '11542',
   ),
   ImageMapRegion(
@@ -844,7 +844,7 @@ final List<ImageMapRegion> regions = [
       ..lineTo(694, 408)
       ..lineTo(750, 439)
       ..close(),
-    color: Colors.teal.withOpacity(0.3),
+    color: Colors.teal.withValues(alpha: 0.3),
     title: '11541',
   ),
   ImageMapRegion(
@@ -857,7 +857,7 @@ final List<ImageMapRegion> regions = [
       ..lineTo(569, 442)
       ..lineTo(601, 374)
       ..close(),
-    color: Colors.teal.withOpacity(0.3),
+    color: Colors.teal.withValues(alpha: 0.3),
     title: '5885/17',
   ),
   ImageMapRegion(
@@ -868,7 +868,7 @@ final List<ImageMapRegion> regions = [
       ..lineTo(494, 508)
       ..lineTo(501, 445)
       ..close(),
-    color: Colors.teal.withOpacity(0.3),
+    color: Colors.teal.withValues(alpha: 0.3),
     title: '5885/19',
   ),
   ImageMapRegion(
@@ -881,7 +881,7 @@ final List<ImageMapRegion> regions = [
       ..lineTo(609, 395)
       ..lineTo(675, 400)
       ..close(),
-    color: Colors.teal.withOpacity(0.3),
+    color: Colors.teal.withValues(alpha: 0.3),
     title: '58858/18',
   ),
 ];
