@@ -21,3 +21,14 @@ run = "flutter test"
 [tasks.build-android]
 description = "Release APK build (R8, release config), so Gradle/AGP/Kotlin updates are checked too"
 run = "flutter build apk --release"
+
+# Workspace standard: `mise run setup` once after cloning, `mise run check` before pushing.
+# CI runs exactly these two tasks, so a green check locally means a green CI.
+
+[tasks.setup]
+description = "Install the toolchain and fetch Dart/Flutter packages"
+run = ["mise install", "mise run get"]
+
+[tasks.check]
+description = "What CI checks: static analysis, tests and the release APK build (stops at the first failure)"
+run = ["mise run analyze", "mise run test", "mise run build-android"]
