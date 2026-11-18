@@ -33,7 +33,6 @@ dependencies:
 
   cupertino_icons: ^2.0.0
   flutter_image_map: ^1.0.1
-  material_ui: ^1.11.1
 
 dev_dependencies:
   flutter_test:

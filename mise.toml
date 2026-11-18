@@ -19,5 +19,5 @@ description = "Run widget and unit tests"
 run = "flutter test"
 
 [tasks.build-android]
-description = "Debug APK build, so Gradle/AGP/Kotlin updates are checked too"
-run = "flutter build apk --debug"
+description = "Release APK build (R8, release config), so Gradle/AGP/Kotlin updates are checked too"
+run = "flutter build apk --release"
