@@ -3,7 +3,7 @@
 # dev.flutter.flutter-plugin-loader (android/settings.gradle.kts), requires Gradle >= 9.3.1, AGP >= 9.1.1
 # and Kotlin Gradle plugin >= 2.4.10. JDK 25 runs Gradle 9.x / AGP 9.x.
 [tools]
-flutter = "3.50.0"
+flutter = "3.50.1"
 java = "temurin-25"
 
 [tasks.get]

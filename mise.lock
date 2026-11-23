@@ -3,30 +3,30 @@
 lockfile_version = 4
 
 [[tools.flutter]]
-version = "3.50.0"
+version = "3.50.1"
 backend = "http:flutter"
-specifiers = ["3.50.0"]
+specifiers = ["3.50.1"]
 unsupported_platforms = ["linux-arm64"]
 
 [tools.flutter."platforms.linux-x64"]
-checksum = "sha256:6ea2d806fd57269ae783e6788e2a81fc26eaad782f1e0d0ff38623bb765ff9f5"
-url = "https://storage.googleapis.com/flutter_infra_release/releases/stable/linux/flutter_linux_3.50.0-stable.tar.xz"
+checksum = "sha256:4ad17fc8462fbcef2ba19ff4a78c0a16b7147fde1add8578e267ea62cdb92678"
+url = "https://storage.googleapis.com/flutter_infra_release/releases/stable/linux/flutter_linux_3.50.1-stable.tar.xz"
 
 [tools.flutter."platforms.linux-x64-musl"]
-checksum = "sha256:6ea2d806fd57269ae783e6788e2a81fc26eaad782f1e0d0ff38623bb765ff9f5"
-url = "https://storage.googleapis.com/flutter_infra_release/releases/stable/linux/flutter_linux_3.50.0-stable.tar.xz"
+checksum = "sha256:4ad17fc8462fbcef2ba19ff4a78c0a16b7147fde1add8578e267ea62cdb92678"
+url = "https://storage.googleapis.com/flutter_infra_release/releases/stable/linux/flutter_linux_3.50.1-stable.tar.xz"
 
 [tools.flutter."platforms.macos-arm64"]
-checksum = "sha256:ed2d08a3e3c023e84cbe9316d21bd88fda6ee9552f90c1eb4da41a07c170fb35"
-url = "https://storage.googleapis.com/flutter_infra_release/releases/stable/macos/flutter_macos_arm64_3.50.0-stable.zip"
+checksum = "sha256:872883d49965e0cc1d8e477d2d87f2f45930d13f94b34889e53783586f04c715"
+url = "https://storage.googleapis.com/flutter_infra_release/releases/stable/macos/flutter_macos_arm64_3.50.1-stable.zip"
 
 [tools.flutter."platforms.macos-x64"]
-checksum = "sha256:d4e1bf2e2fc0c2e92267f45660c16a7d805e84ad42cb40b64b466446bffe48e0"
-url = "https://storage.googleapis.com/flutter_infra_release/releases/stable/macos/flutter_macos_3.50.0-stable.zip"
+checksum = "sha256:5c3d3bbabc8edd58eb98605047c59c31a82895cfe7d119318d0f62cdbd5d47ed"
+url = "https://storage.googleapis.com/flutter_infra_release/releases/stable/macos/flutter_macos_3.50.1-stable.zip"
 
 [tools.flutter."platforms.windows-x64"]
-checksum = "sha256:35fb843409c80a1c69b64bbae1756bba437222f909622d83540e266e1759aab8"
-url = "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_3.50.0-stable.zip"
+checksum = "sha256:33c1e3d4dd08f1136ddb9c7976cfd2b0ab20296f1565b78ba176a4cbb4e140eb"
+url = "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_3.50.1-stable.zip"
 
 [[tools.java]]
 version = "temurin-25.0.5.1+2.0.LTS"
